@@ -1,0 +1,8 @@
+<h1>This is the posts page!</h1>
+{{#link-to '/'}}
+<h2>Index</h2>
+{{/link-to}}
+{{#each model as |post|}}
+<h4>Title: {{post.title}}</h4>
+<h3>Body: {{post.body}}</h3>
+{{/each}}
